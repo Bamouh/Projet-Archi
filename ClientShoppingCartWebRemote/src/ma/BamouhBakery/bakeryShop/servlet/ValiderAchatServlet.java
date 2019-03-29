@@ -1,0 +1,43 @@
+package ma.BamouhBakery.bakeryShop.servlet;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import ma.BamouhBakery.business.delegate.MenuOnSaleBusinessDelegate;
+import ma.BamouhBakery.business.delegate.ShoppingCartBusinessDelegate;
+
+/**
+ * Servlet implementation class ValiderAchatServlet
+ */
+public class ValiderAchatServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	private ShoppingCartBusinessDelegate delegate;
+	private MenuOnSaleBusinessDelegate delegateSale;
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public ValiderAchatServlet() {
+        super();
+        delegate = new ShoppingCartBusinessDelegate();
+        delegateSale = new MenuOnSaleBusinessDelegate();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+	}
+
+}
